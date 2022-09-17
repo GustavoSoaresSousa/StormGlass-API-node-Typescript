@@ -1,6 +1,6 @@
 describe('Beach forecast fuctional tests', () => {
-  it('Should return a forecast with just few  times', async() => {
-    const {body, status} = await global.testRequest.get('/forecast');
+  it('Should return a forecast with just few  times', async () => {
+    const { body, status } = await global.testRequest.get('/forecast');
 
     expect(status).toBe(200);
     expect(body).toEqual([
@@ -44,4 +44,4 @@ describe('Beach forecast fuctional tests', () => {
       },
     ]);
   });
-})
+});

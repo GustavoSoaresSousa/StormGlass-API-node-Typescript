@@ -1,11 +1,10 @@
-import{Controller, Get} from "@overnightjs/core";
-import { Request, Response } from "express";
+import { Controller, Get } from '@overnightjs/core';
+import { Request, Response } from 'express';
 
 @Controller('forecast')
-export class ForecastConstroller{
-
+export class ForecastConstroller {
   @Get('')
-  public getForecastForLoggedUser(_ : Request, res : Response): void {
+  public getForecastForLoggedUser(_: Request, res: Response): void {
     res.send([
       {
         time: '2020-04-26T00:00:00+00:00',
@@ -45,7 +44,6 @@ export class ForecastConstroller{
           },
         ],
       },
-    ])
+    ]);
   }
-
 }
