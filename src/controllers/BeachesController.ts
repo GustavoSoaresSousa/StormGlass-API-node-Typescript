@@ -1,6 +1,6 @@
 import { Controller, Post } from '@overnightjs/core';
 import { Request, Response } from 'express';
-import { Beach } from '@src/models/beachs';
+import { Beach } from '../models/beachs';
 import mongoose from 'mongoose';
 
 @Controller('beaches')

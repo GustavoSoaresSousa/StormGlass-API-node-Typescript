@@ -2,7 +2,7 @@
   "App": {
     "port": 3000,
     "database": {
-      "mongoUrl": "mongodb://localhost:27017/surf-forecast"
+      "mongoUrl": "mongodb+srv://gustavo:claudio10@cluster0.jrc9o.mongodb.net/surf-forecast?retryWrites=true&w=majority"
     },
     "resources": {
       "StormGlass": {
