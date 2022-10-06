@@ -1,9 +1,8 @@
 import { Controller, Post } from '@overnightjs/core';
-import { error } from 'console';
 import { Response, Request } from 'express';
 import { BaseController } from './index';
 import { User } from '../models/user';
-import AuthService from '@src/services/auth';
+import AuthService from '../services/auth';
 
 @Controller('users')
 export class UsersController extends BaseController {
